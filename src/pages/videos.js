@@ -12,7 +12,7 @@ export default class Videos extends React.Component {
           {
             videos.edges.map(({ node }) => (
               <div className='video-item' key={node.id}>
-                <a href={`https://www.youtube.com/watch?v=${node.videoId}`} rel='noopener' target='_blank' >
+                <a href={`https://www.youtube.com/watch?v=${node.videoId}`} rel="noopener noreferrer" target='_blank' >
                   <div>
                   <img className='video-card' src={node.thumbnail.url} alt={node.title} />
                   <div className='video-description'>

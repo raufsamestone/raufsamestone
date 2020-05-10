@@ -5,6 +5,7 @@ title: "How to use your mobile device as CMS?"
 tags: ["CMS", "Jamstack", "Markdown",  "Markdown Editors", "SEO"]
 writer: Berkay Demirbas
 avatar: ../images/berkay.jpg
+english: true
 ---
 
 First of all, **it's not the recommended** way to writing content and push to your repository with mobile devices.

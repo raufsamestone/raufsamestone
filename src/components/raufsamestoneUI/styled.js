@@ -52,6 +52,8 @@ export const Label = styled.span`
 `;
 export const Title = styled.h1`
 font-size:22px;
+display: flex;
+align-items: center;
 width: max-content;
 color:#17252A;
 margin:0;
@@ -71,6 +73,7 @@ export const Dot = styled.span`
 padding: 0 5px;
 `;
 export const Wrapper = styled.div`
+flex-wrap: wrap;
 margin: ${props => props.margin ? '1rem 0' : 'unset'};
 font-size: 13px;
 display: ${props => props.flex ? 'flex' : 'unset'};

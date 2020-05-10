@@ -5,6 +5,7 @@ title: "Eleventy Nedir?"
 tags: ["Eleventy", "Static Site Generators", "Jamstack", "11ty"]
 writer: Berkay Demirbas
 avatar: ../images/berkay.jpg
+english: false
 ---
 
 **Eleventy**, oldukça basit bir statik site oluşturucusudur. (SSG)

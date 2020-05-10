@@ -5,6 +5,7 @@ title: "Highlight your code in Gatsby"
 tags: ["Syntax", "Gatsby", "Jamstack", "Prismjs", "Deckdeckgo", "Stenciljs"]
 writer: Berkay Demirbas
 avatar: ../images/berkay.jpg
+english: true
 ---
 ## Different the basic and highlighted
 

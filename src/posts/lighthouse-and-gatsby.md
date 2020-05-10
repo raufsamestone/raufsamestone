@@ -5,6 +5,7 @@ title: "Using Lighthouse with Gatsby"
 tags: ["Lighthouse", "GraphQL"]
 writer: Berkay Demirbas
 avatar: ../images/berkay.jpg
+english: true
 ---
 
 Firstly you need to install Lighthouse.

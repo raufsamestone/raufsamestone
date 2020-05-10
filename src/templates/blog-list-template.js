@@ -3,6 +3,8 @@ import { SEO } from 'components';
 import Layout from '../components/layout'
 import { graphql, Link } from "gatsby"
 import Fade from '@material-ui/core/Fade';
+import EN from "../../src/images/en.svg"
+import TR from "../../src/images/tr.svg"
 import { GatsbyLink, Title, Wrapper, Time, SubTitle, PaginationButtonGroup, AvatarImage, Dot, } from '../components/raufsamestoneUI/styled'
 
 export default class BlogList extends React.Component {
@@ -26,7 +28,11 @@ export default class BlogList extends React.Component {
               <Wrapper key={node.id}>
                 <GatsbyLink to={node.frontmatter.path || node.fields.slug}>
                   <Fade in timeout={1000}>
-                    <Title>{node.frontmatter.title}
+                    <Title>{node.frontmatter.title} {node.frontmatter.english ?
+                      <img className='language-flag' src={EN} alt='English USA Language Flag' />
+                      :
+                      <img  className='language-flag'src={TR} alt='Turkish Language Flag' />
+                    }
                     </Title>
                   </Fade>
                   <Wrapper style=
@@ -59,7 +65,7 @@ export default class BlogList extends React.Component {
             </GatsbyLink>
           )}
         </PaginationButtonGroup>
-        <Link to='/rss'>Follow the RSS feed</Link> <br/>
+        <Link to='/rss'>Follow the RSS feed</Link> <br />
         <Link to='/tags'>Show all blog tags</Link>
       </Layout>
     )
@@ -86,6 +92,7 @@ query blogListQueryList($skip: Int!, $limit: Int!) {
           path
           title
           writer
+          english
           avatar {
             childImageSharp {
               fixed(width:30, height:30) {

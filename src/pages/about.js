@@ -44,7 +44,7 @@ const About = ({ data }) => (
     <br />
     <Fade in timeout={1000}>
       <SquareButton as='a' href='/Berkay_Demirbas_CV_2020.pdf'>
-        Download CV as PDF
+        Download CV
    </SquareButton>
     </Fade>
     <br /> <br />

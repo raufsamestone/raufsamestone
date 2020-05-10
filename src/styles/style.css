@@ -73,9 +73,26 @@ code {
 
 .video-description h1 {
     font-size: 1rem;
-    margin:0;
+    margin: 0;
 }
 
 .video-description date {
     font-size: .8rem;
+}
+
+.language-flag {
+    width: 1.2rem;
+    margin: 5px;
+    margin-bottom: 0;
+}
+
+iframe {
+    border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    iframe {
+        width: 100%;
+        height: 15rem;
+    }
 }
