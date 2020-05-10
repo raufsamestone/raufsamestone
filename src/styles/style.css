@@ -1,0 +1,81 @@
+::-moz-selection {
+    background: yellow;
+}
+
+::selection {
+    background: yellow;
+}
+
+.highlighted {
+    background: url(../../static/brush.svg);
+    background-repeat: no-repeat;
+    background-size: 75%;
+    padding: 1rem 5rem;
+    margin: -5rem;
+    background-position: center;
+}
+
+/* .highlighted text{
+
+        background-image: linear-gradient( 109.6deg, rgba(255,98,98,0.71) 11.3%, rgba(255,6,6,1) 100.2% );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    
+} */
+
+a {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #17252ab0;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #17252a
+}
+
+code {
+    background: #252F32;
+    padding: 4px;
+    color: white;
+}
+
+.video-grid {
+    margin-top: 5rem;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(50px, auto);
+}
+
+.video-card {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity 500ms ease 0s;
+}
+
+.video-card {
+    transition: filter .2s ease-in;
+}
+
+.video-card:hover {
+    cursor: pointer;
+}
+
+.video-description {
+    margin-bottom: 1rem;
+    margin-top: .4rem;
+}
+
+.video-description h1 {
+    font-size: 1rem;
+    margin:0;
+}
+
+.video-description date {
+    font-size: .8rem;
+}
