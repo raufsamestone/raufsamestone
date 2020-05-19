@@ -1,7 +1,7 @@
 ---
 date: "2020-05-10"
-path: 'react-seo'
-title: "React Helmet ile Basic SEO Optimizasyonu"
+path: 'react-helmet-jamstack-seo'
+title: "React Helmet ile SEO Componenti Oluşturma"
 tags: ["Jamstack", "SEO", "Gatsby", "React", "React Helmet"]
 writer: Berkay Demirbas
 avatar: ../images/berkay.jpg
