@@ -11,7 +11,8 @@ const styles = ({ palette, typography }) => ({
     color: palette.text.secondary,
   },
   navLinkActive: {
-    background: 'linear-gradient( 88.7deg, #f8ff17 10.6%, #f8ff1700 90% )'
+    background: 'yellow',
+    fontWeight: 'bold'
   },
 });
 

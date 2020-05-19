@@ -23,6 +23,10 @@ margin-right: 5px;
 export const SquareButton = styled.button`
 border: 1px solid black;
 padding:10px;
+bottom: 25px;
+    right: 25px;
+    background: white;
+    position: fixed;
 outline:non
 &:hover{
   cursor: pointer
@@ -71,6 +75,7 @@ font-size:13px;
 `;
 export const Dot = styled.span`
 padding: 0 5px;
+
 `;
 export const Wrapper = styled.div`
 flex-wrap: wrap;
@@ -78,6 +83,20 @@ margin: ${props => props.margin ? '1rem 0' : 'unset'};
 font-size: 13px;
 display: ${props => props.flex ? 'flex' : 'unset'};
 align-items: ${props => props.alignCenter ? 'center' : 'unset'};
+`;
+
+export const ListWrapper = styled.div`
+border-radius: 4px;
+box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+background: white;
+margin: 0 0 2rem; 
+padding:1rem;
+transition: transform .2s ease-in;
+&:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
+}
+
 `;
 
 export const PostContent = styled.div`

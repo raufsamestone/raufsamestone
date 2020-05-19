@@ -5,7 +5,7 @@ import { graphql, Link } from "gatsby"
 import Fade from '@material-ui/core/Fade';
 import EN from "../../src/images/en.svg"
 import TR from "../../src/images/tr.svg"
-import { GatsbyLink, Title, Wrapper, Time, SubTitle, PaginationButtonGroup, AvatarImage, Dot, } from '../components/raufsamestoneUI/styled'
+import { GatsbyLink, Title, Wrapper, Time, SubTitle, PaginationButtonGroup, AvatarImage, Dot, ListWrapper } from '../components/raufsamestoneUI/styled'
 
 export default class BlogList extends React.Component {
   render() {
@@ -23,16 +23,11 @@ export default class BlogList extends React.Component {
         <br />
         {
           posts.edges.map(({ node }) => (
-            <div style=
-              {{ margin: '0 0 2rem' }}>
+            <ListWrapper>
               <Wrapper key={node.id}>
                 <GatsbyLink to={node.frontmatter.path || node.fields.slug}>
                   <Fade in timeout={1000}>
-                    <Title>{node.frontmatter.title} {node.frontmatter.english ?
-                      <img className='language-flag' src={EN} alt='English USA Language Flag' />
-                      :
-                      <img  className='language-flag'src={TR} alt='Turkish Language Flag' />
-                    }
+                    <Title>{node.frontmatter.title} 
                     </Title>
                   </Fade>
                   <Wrapper style=
@@ -44,12 +39,18 @@ export default class BlogList extends React.Component {
                     {node.frontmatter.writer}
                     <Dot>•</Dot>
                     <Time> {node.frontmatter.date}</Time>  <Dot>•</Dot>
-                    {node.timeToRead} min to read
+                    {node.timeToRead} min to read 
+                    <Dot>•</Dot>
+                    {node.frontmatter.english ?
+                      <img className='language-flag' src={EN} alt='English USA Language Flag' />
+                      :
+                      <img  className='language-flag'src={TR} alt='Turkish Language Flag' />
+                    }
                 </Wrapper>
                   <SubTitle>{node.excerpt}</SubTitle>
                 </GatsbyLink>
               </Wrapper>
-            </div>
+            </ListWrapper>
           ))
         }
 

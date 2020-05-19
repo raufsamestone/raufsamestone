@@ -1,9 +1,10 @@
 require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
-})
+});
 
+console.log(process.env.YOUTUBE_API_KEY)
 module.exports = {
-  siteMetadata: {
+  siteMetadata: { 
     title: `Raufsamestone`,
     description: `Raufsamestone, JAMstack, UI/UX, Growth Hacking and more`,
     author: `Raufsamestone`,
@@ -16,7 +17,7 @@ module.exports = {
       resolve: `gatsby-source-youtube-v2`,
       options: {
         channelId: ['UC1JOO_eyhzaU4W5cgAVf0Sg'],
-        apiKey: process.env.Youtube_API_KEY,
+        apiKey: process.env.YOUTUBE_API_KEY,
         maxVideos: 50 
       },
     },

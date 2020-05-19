@@ -43,12 +43,6 @@ const About = ({ data }) => (
     <SEO title='About' />
     <br />
     <Fade in timeout={1000}>
-      <SquareButton as='a' href='/Berkay_Demirbas_CV_2020.pdf'>
-        Download CV
-   </SquareButton>
-    </Fade>
-    <br /> <br />
-    <Fade in timeout={1000}>
       <Typography variant='h1' color='textPrimary'>
         <>Berkay Demirbaş</>
       </Typography>
@@ -109,6 +103,13 @@ const About = ({ data }) => (
       <p>Figma <span role="img" aria-label="Figma"> <FigmaIcon /></span></p>
       <p>Zeplin <span role="img" aria-label="Zeplin"> <ZeplinIcon /></span></p>
     </AboutContent>
+    <br />
+    <Fade in timeout={1000}>
+      <SquareButton as='a' href='/Berkay_Demirbas_CV_2020.pdf'>
+        Download CV
+   </SquareButton>
+    </Fade>
+    <br />
   </Layout>
 )
 

@@ -1,5 +1,5 @@
 import React, { Component } from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import kebabCase from "lodash/kebabCase"
 import Typography from '@material-ui/core/Typography';
 import Fade from '@material-ui/core/Fade';
@@ -46,7 +46,7 @@ export default class BlogTemplate extends Component {
             fixed={post.frontmatter.avatar.childImageSharp.fixed}
             alt={post.frontmatter.writer}
           />
-          {post.frontmatter.writer}
+         <Link to='/about'> {post.frontmatter.writer}</Link>
           <Dot>•</Dot>
           <Time> {post.frontmatter.date}</Time>
         </Wrapper>
