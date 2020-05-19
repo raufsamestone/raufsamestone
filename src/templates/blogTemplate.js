@@ -77,6 +77,7 @@ export const pageQuery = graphql`
         path
         title
         tags
+        english
         writer
         avatar {
           childImageSharp {
