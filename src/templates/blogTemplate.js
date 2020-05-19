@@ -27,6 +27,7 @@ export default class BlogTemplate extends Component {
           title={post.frontmatter.title}
           description={post.excerpt}
           blogPostSlug={post.fields.slug}
+          lang={post.frontmatter.english ? 'en' : 'tr'}
         />
         <br />
         <GatsbyLink to='/blog'>
@@ -46,13 +47,13 @@ export default class BlogTemplate extends Component {
             fixed={post.frontmatter.avatar.childImageSharp.fixed}
             alt={post.frontmatter.writer}
           />
-         <Link to='/about'> {post.frontmatter.writer}</Link>
+          <Link to='/about'> {post.frontmatter.writer}</Link>
           <Dot>•</Dot>
           <Time> {post.frontmatter.date}</Time>
         </Wrapper>
-         <PostContent
+        <PostContent
           dangerouslySetInnerHTML={{ __html: post.html }}
-        /> 
+        />
         {post.frontmatter.tags.map((tag, i) => [
           <GatsbyLink to={`/tags/${kebabCase(tag)}/`} key={i}>
             <Label color='#17252A'>{tag}</Label>
