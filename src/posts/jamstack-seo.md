@@ -7,8 +7,10 @@ writer: Berkay Demirbas
 avatar: ../images/berkay.jpg
 english: false
 ---
+**Gatsby**'de **React Helmet** kütüphanesini kullanarak, **SEO** componentinin nasıl oluşturulduğundan bahsedeceğim. 
 
-**Gatsby**'de **React Helmet** kütüphanesini kullanarak, SEO componentinin nasıl oluşturulduğundan bahsedeceğim. 
+## React SEO 
+Bu yöntem ile, sadece **Gatsby** üzerinde değil, React tabanlı tüm framework'leri kullanarak da, web sitenizi **SEO** uyumlu hale getirebilir, SEO için en hızlı optimizasyonu yapabilirsiniz.
 
 Öncelikle:
 ## React Helmet Nedir? 
