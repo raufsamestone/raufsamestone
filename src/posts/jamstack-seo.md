@@ -1,7 +1,7 @@
 ---
 date: "2020-05-10"
-path: 'react-helmet-jamstack-seo'
-title: "React Helmet ile SEO Componenti Oluşturma"
+path: 'react-seo'
+title: "React Helmet ile Basic SEO Optimizasyonu"
 tags: ["Jamstack", "SEO", "Gatsby", "React", "React Helmet"]
 writer: Berkay Demirbas
 avatar: ../images/berkay.jpg
@@ -12,7 +12,6 @@ english: false
 ## React SEO 
 Bu yöntem ile, sadece **Gatsby** üzerinde değil, React tabanlı tüm framework'leri kullanarak da, web sitenizi **SEO** uyumlu hale getirebilir, SEO için en hızlı optimizasyonu yapabilirsiniz.
 
-Öncelikle:
 ## React Helmet Nedir? 
 
 Düz bir **HTML** sayfasında kullanılabilen etiketlerin React üzerinde dinamikleştirilmesine olanak sağlar. Kullanımı son derece basittir.
