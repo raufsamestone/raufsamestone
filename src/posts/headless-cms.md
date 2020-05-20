@@ -1,7 +1,7 @@
 ---
-date: 2020-05-19T21:00:00Z
+date: 2020-05-19T21:00:00.000+00:00
 path: headless-cms
-title: 'Headless CMS Nedir?'
+title: Headless CMS Nedir?
 tags:
 - Headless CMS
 - " CMS"
@@ -49,9 +49,9 @@ Bu durumda Headless CMS'leri de **git-tabanlı** ve **API** odaklı olarak ikiye
 
 Git üzerindeki repository'de bulunan dosyaların manipüle edilmesiyle içerik yönetimi sağlanır. Çoğu geliştirici ve içerik yöneticisi bu yöntemi tercih eder. Tüm içerikle Markdown, YAML gibi dosyalarda saklanabilir. Git'in ana mantığı olan olan versiyon kontrolü ve bir önceki branch'e geri dönme özelli, web projenize büyük avantaj sağlar. Ancak bununla birlikte repository'nizdeki dosya boyutunun yüksek olması, medya formatlarının stabil olarak saklanamaması gibi sorunlar dolayısıyla da bazı dezavantajları var.
 
-### API Odaklı Headless CMS 
+### API Odaklı Headless CMS
 
-Contentful ve Prismic gibi tamamen API odaklı çalışan CMS'lerdir. Sitedeki içerik değişikliğinde de her seferinde tüm siteyi build etmesine gerek kalmaz ve birden fazla uygulamaya tek bir noktadan veri sağlayabilir. Ancak Git-Tabanlı gibi versiyon ve branch kontrolü yoktur. 
+Contentful ve Prismic gibi tamamen API odaklı çalışan CMS'lerdir. Sitedeki içerik değişikliğinde de her seferinde tüm siteyi build etmesine gerek kalmaz ve birden fazla uygulamaya tek bir noktadan veri sağlayabilir. Ancak Git-Tabanlı gibi versiyon ve branch kontrolü yoktur.
 
 Headless CMS, Jamstack CMS ya da Decoupled CMS olarak da biliniyor.
 
@@ -63,18 +63,17 @@ Headless CMS, Jamstack CMS ya da Decoupled CMS olarak da biliniyor.
 
 **Netlify**'ın kurduğu ve kendi dashboardu içerisinde yönetebileceğiniz, açık kaynaklı bir CMS'dir. Kompleks site mimarisi ve içerikler için **YAML** ve **Markdown** formatlarını destekliyor ve aynı zamanda localde de çalıştırabiliyorsunuz. Arayüzündeki fieldları kendiniz, içeriğinize göre ayarlamak zorundasınız. Kurulumu bu esnada biraz uzun sürüyor. Çoklu kullanıcıyla ortak içerik üzerinde çalışma, workflow ve draft gibi özellikleri de mevcut.
 
-Kurulma dair Türkçe videoyu buradan izleyebilirsiniz.  
+Kurulma dair Türkçe videoyu buradan izleyebilirsiniz.
 
 `youtube:https://www.youtube.com/embed/R_AJrElQBkI`
-
 
 Türü: Git-Tabanlı  
 [https://www.netlifycms.org/](https://www.netlifycms.org/ "https://www.netlifycms.org/")
 
 ## Contentful
 
-Kurulumu kendi arayüzünden olmakta ve çoklu proje yöneticileri için ve kompleks içerik modelleri oluşturmak için idealdir. Ücretlidir ancak ücretsiz versiyonunda da sunduğu özellikler tatmin edici. Özellikle dil yönetimi, **i18n** konusunda gayet iyi. **Gatsby Cloud** ile entegre çalıştırıldığında oldukça başarılı hale geliyor.  
-  
+Kurulumu kendi arayüzünden olmakta ve çoklu proje yöneticileri için ve kompleks içerik modelleri oluşturmak için idealdir. Ücretlidir ancak ücretsiz versiyonunda da sunduğu özellikler tatmin edici. Özellikle dil yönetimi, **i18n** konusunda gayet iyi. **Gatsby Cloud** ile entegre çalıştırıldığında oldukça başarılı hale geliyor.
+
 `youtube:https://www.youtube.com/embed/JkAlSgmUMtc`
 
 Türü: API  
@@ -87,7 +86,7 @@ Türü: API
 Türü: Git-Tabanlı  
 [https://forestry.io/](https://forestry.io/ "https://forestry.io/")
 
-## Tiny CMS
+## Tina CMS
 
 Local'de çalıştırabildiğiniz ve **GraphQL** üzerinden tüm verileri çekebildiğiniz bir CMS. En güzel ve etkileyici özelliği sanırım, kurulum sonrasında çok fazla teknik bilgi gerektirmeyen bir dinamiği olması. Tüm içeriklerinizi Front-end üzerinden anlık olarak yönetebiliyorsunuz.
 
