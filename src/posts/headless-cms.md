@@ -1,7 +1,7 @@
 ---
 date: 2020-05-19T21:00:00Z
 path: headless-cms
-title: 'Headless CMS Nedir? '
+title: 'Headless CMS Nedir?'
 tags:
 - Headless CMS
 - " CMS"
@@ -64,8 +64,9 @@ Headless CMS, Jamstack CMS ya da Decoupled CMS olarak da biliniyor.
 **Netlify**'ın kurduğu ve kendi dashboardu içerisinde yönetebileceğiniz, açık kaynaklı bir CMS'dir. Kompleks site mimarisi ve içerikler için **YAML** ve **Markdown** formatlarını destekliyor ve aynı zamanda localde de çalıştırabiliyorsunuz. Arayüzündeki fieldları kendiniz, içeriğinize göre ayarlamak zorundasınız. Kurulumu bu esnada biraz uzun sürüyor. Çoklu kullanıcıyla ortak içerik üzerinde çalışma, workflow ve draft gibi özellikleri de mevcut.
 
 Kurulma dair Türkçe videoyu buradan izleyebilirsiniz.  
-  
-**\`youtube:**[**https://www.youtube.com/embed/dm_U_4vwhKA**](https://www.youtube.com/embed/R_AJrElQBkI "https://www.youtube.com/embed/R_AJrElQBkI")**\`**
+
+`youtube:https://www.youtube.com/embed/R_AJrElQBkI`
+
 
 Türü: Git-Tabanlı  
 [https://www.netlifycms.org/](https://www.netlifycms.org/ "https://www.netlifycms.org/")
@@ -74,7 +75,7 @@ Türü: Git-Tabanlı
 
 Kurulumu kendi arayüzünden olmakta ve çoklu proje yöneticileri için ve kompleks içerik modelleri oluşturmak için idealdir. Ücretlidir ancak ücretsiz versiyonunda da sunduğu özellikler tatmin edici. Özellikle dil yönetimi, **i18n** konusunda gayet iyi. **Gatsby Cloud** ile entegre çalıştırıldığında oldukça başarılı hale geliyor.  
   
-**\`youtube:**[**https://www.youtube.com/embed/JkAlSgmUMtc**](https://www.youtube.com/embed/JkAlSgmUMtc "https://www.youtube.com/embed/JkAlSgmUMtc")**\`**
+`youtube:https://www.youtube.com/embed/JkAlSgmUMtc`
 
 Türü: API  
 [https://www.contentful.com/](https://www.contentful.com/ "https://www.contentful.com/")
