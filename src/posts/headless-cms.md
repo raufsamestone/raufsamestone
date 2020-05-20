@@ -37,7 +37,7 @@ Sunucuya ihtiyaç duymaz ve doğrudan **CDN** ile aktarılabilir.
 Herhangi bir editorle.  
 ![Markdown Editor](https://res.cloudinary.com/raufsamestone/image/upload/v1589966134/blog-contents/headless-cms-markdown-editor_koabgj.webp "VS Code")
 
-Ya da bir Headess CMS aracılığıyla. Burada [**Forestry**](https://forestry.io/) kullanıyorum.
+Ya da bir Headless CMS aracılığıyla. Burada [**Forestry**](https://forestry.io/) kullanıyorum.
 
 ![Forestry Headless CMS Dashboard](https://res.cloudinary.com/raufsamestone/image/upload/v1589959817/blog-contents/headless-cms-forestry-dashboard_sfjtrb.webp "Forestry Headless CMS Dashboard")
 
