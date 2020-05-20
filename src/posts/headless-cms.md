@@ -35,11 +35,11 @@ Sunucuya ihtiyaç duymaz ve doğrudan **CDN** ile aktarılabilir.
 Örneğin bu yazıyı okuyorsanız, **raufsamestone.com/headless-cms** URL'inde gözüken web sitesindesinizdir ve bu web sitesi de **React** tabanlı **Gatsby** ile **Netlify** üzerinden servis edilerek çalışmakta. Ve her bir sayfa aslında birer **Markdown** dosyası. Ve bu Markdown dosyalarının oluşturulup düzenlemesi, Gatsby üzerinde bunun generate edilmesi ve birer eşsiz sayfa olarak Netlify'da build edilmesi gerekiyor. Şimdi, bu içeriği nasıl yazabiliriz?
 
 Herhangi bir editorle.  
-![Markdown Editor](https://res.cloudinary.com/raufsamestone/image/upload/v1589959814/blog-contents/headless-cms-markdown-editor_zyuu9a.png "VS Code")
+![Markdown Editor](https://res.cloudinary.com/raufsamestone/image/upload/v1589966134/blog-contents/headless-cms-markdown-editor_koabgj.webp "VS Code")
 
 Ya da bir Headess CMS aracılığıyla. Burada [**Forestry**](https://forestry.io/) kullanıyorum.
 
-![Forestry Headless CMS Dashboard](https://res.cloudinary.com/raufsamestone/image/upload/v1589959817/blog-contents/headless-cms-forestry-dashboard_sfjtrb.png "Forestry Headless CMS Dashboard")
+![Forestry Headless CMS Dashboard](https://res.cloudinary.com/raufsamestone/image/upload/v1589959817/blog-contents/headless-cms-forestry-dashboard_sfjtrb.webp "Forestry Headless CMS Dashboard")
 
 İçeriği yazdıktan sonra, Git-Based olan Forestry, yapılan değişikliği yani oluşturduğu markdown dosyasını, doğrudan web sitenin GitHub üzerindeki repository'sine gönderiyor ve Netlify'da bunun yeni ve güncel bir Branch olduğunu görüp burada yeralan tüm dosyaları build edip canlıya alıyor.
 
