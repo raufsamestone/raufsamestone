@@ -73,12 +73,12 @@ Site haritasında gösterilmesini istemediğiniz sayfaları **RegEX** ile ekleye
 
 **createLinkInHead**
 
-Site haritanızdaki **`<Head>`** etiketlerine linklerin eklenip eklenmeyeceğinizi **boolean** ile belirlediğiniz komuttur.
+Site haritanızdaki **`<Head>`** etiketlerine linklerin eklenip eklenmeyeceğini **boolean** ile belirlediğiniz komuttur.
 
 **sitemapSize**
 
 Site haritasındaki içerik sayısını spesifik olarak belirleyebilirsiniz.
-Varsayılan olarak **5000**'dir. 5000'den fazla olduğunda, site haritasının yüklenmesini ve robotlar tarafından okunabilmesini kolaylaştırmak amacıyla, 5001. içeriği **sitemap-2.xml** gibi bir output'a otomatik olarak devreder. Oldukça kullanışlı bir özellik.
+Varsayılan olarak **5000**'dir. 5000'den fazla olduğunda, site haritasının yüklenmesini ve robotlar tarafından okunmasını kolaylaştırmak amacıyla, 5001. içeriği **sitemap-2.xml** gibi bir output'a otomatik olarak devreder. Oldukça kullanışlı bir özellik.
 
 **Kaynak**  
 [https://www.gatsbyjs.org/packages/gatsby-plugin-sitemap/](https://www.gatsbyjs.org/packages/gatsby-plugin-sitemap/ "https://www.gatsbyjs.org/packages/gatsby-plugin-sitemap/")
