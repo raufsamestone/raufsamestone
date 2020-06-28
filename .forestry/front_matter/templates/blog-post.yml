@@ -23,3 +23,5 @@ fields:
 - type: boolean
   name: english
   label: english
+pages:
+- src/posts/gatsby-ye-sitemap-nasil-eklenir.md
