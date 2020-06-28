@@ -20,6 +20,7 @@ fields:
 - type: file
   name: avatar
   label: avatar
+  default: "/uploads/berkay.jpg"
 - type: boolean
   name: english
   label: english
