@@ -60,18 +60,23 @@ Plugin devreye girdiğinde daima şu sayfaları devre dışı bırakır ve buna 
 ## Opsiyonlar
 
 **query**
-Gatsby içinde oluşturulmuş içerikleri **GraphQL** ile ayıklayarak ketagorize edebilirsiniz.
+
+Gatsby içinde oluşturulmuş içerikleri **GraphQL** ile ayıklayarak kategorize edebilirsiniz.
 
 **output**
+
 Sitemap'in gösterileceği yoldur. Varsayılan olarak **/sitemap.xml** tanımlıdır.
 
 **exclude**
+
 Site haritasında gösterilmesini istemediğiniz sayfaları **RegEX** ile ekleyebileceğiniz komuttur.
 
 **createLinkInHead**
-Site haritanızdaki **<Head/>** etiketlerine linklerin eklenip eklenmeyeceğinizi **boolean** ile belirlediğiniz komuttur
+
+Site haritanızdaki **`<Head>`** etiketlerine linklerin eklenip eklenmeyeceğinizi **boolean** ile belirlediğiniz komuttur.
 
 **sitemapSize**
+
 Site haritasındaki içerik sayısını spesifik olarak belirleyebilirsiniz.
 Varsayılan olarak **5000**'dir. 5000'den fazla olduğunda, site haritasının yüklenmesini ve robotlar tarafından okunabilmesini kolaylaştırmak amacıyla, 5001. içeriği **sitemap-2.xml** gibi bir output'a otomatik olarak devreder. Oldukça kullanışlı bir özellik.
 
