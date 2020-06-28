@@ -1,14 +1,14 @@
 ---
 date: 2020-06-27T21:00:00Z
 path: gatsby-sitemap
-title: Gatsby'ye Sitemap Nasıl Eklenir?
+title: Gatsby'ye Site Haritası Nasıl Eklenir?
 tags:
 - react
 - seo
 - sitemap
 - gatsby
 writer: Berkay Demirbas
-avatar: ''
+avatar: "/uploads/berkay.jpg"
 english: false
 
 ---
