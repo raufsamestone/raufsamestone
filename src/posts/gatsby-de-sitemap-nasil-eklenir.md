@@ -1,17 +1,17 @@
 ---
 date: 2020-06-27T21:00:00Z
 path: gatsby-sitemap
-title: Gatsby'ye Site Haritası Nasıl Eklenir?
+title: Gatsby'de Site Haritası Nasıl Eklenir?
 tags:
 - react
-- seo
+- SEO
 - sitemap
 - gatsby
 writer: Berkay Demirbas
-avatar: "/uploads/berkay.jpg"
+avatar: "../images/berkay.jpg"
 english: false
-
 ---
+
 **SEO**'nun olmazsa olmazlarından Sitemap'i (Site Haritası), **Gatsby**'ye plugin aracılığıyla ekleyebilirsiniz.
 
 ## Pluginin Yüklenmesi
