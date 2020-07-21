@@ -4,7 +4,7 @@ path: 'lighthouse-and-gatsby'
 title: "Using Lighthouse with Gatsby"
 tags: ["Lighthouse", "GraphQL"]
 writer: Berkay Demirbas
-avatar: ../images/berkay.jpg
+avatar: ../images/raufsamestone.jpg
 english: true
 ---
 

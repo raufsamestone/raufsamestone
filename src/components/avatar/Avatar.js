@@ -1,5 +1,5 @@
 import React from 'react';
-import avatarIcon from 'images/berkay.jpg';
+import avatarIcon from 'images/raufsamestone.jpg';
 import { withStyles } from '@material-ui/styles';
 
 import styles from './style';

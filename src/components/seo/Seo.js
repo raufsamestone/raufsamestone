@@ -15,7 +15,7 @@ function SEO({ description, lang, meta, title, blogPostSlug }: Props) {
 
   const metaDescription = description || siteMetadata.description;
   
-  const OgImage = blogPostSlug ? `https://www.raufsamestone.com${blogPostSlug}twitter-card.jpg` :  'https://www.raufsamestone.com/berkay.jpg'
+  const OgImage = blogPostSlug ? `https://www.raufsamestone.com${blogPostSlug}twitter-card.jpg` :  'https://www.raufsamestone.com/raufsamestone.jpg'
   const TwitterCard = blogPostSlug ? 'summary_large_image' : 'summary'
   return (
     <Helmet

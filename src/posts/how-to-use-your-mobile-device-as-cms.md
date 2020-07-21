@@ -4,7 +4,7 @@ path: "how-to-use-your-mobile-device-as-cms"
 title: "How to use your mobile device as CMS?"
 tags: ["CMS", "Jamstack", "Markdown",  "Markdown Editors", "SEO"]
 writer: Berkay Demirbas
-avatar: ../images/berkay.jpg
+avatar: ../images/raufsamestone.jpg
 english: true
 ---
 

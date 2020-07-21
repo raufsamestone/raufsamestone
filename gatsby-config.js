@@ -1,8 +1,8 @@
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
+// require('dotenv').config({
+//   path: `.env.${process.env.NODE_ENV}`,
+// });
 
-console.log(process.env.YOUTUBE_API_KEY)
+// console.log(process.env.YOUTUBE_API_KEY)
 module.exports = {
   siteMetadata: { 
     title: `Raufsamestone`,
@@ -13,14 +13,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-flow`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-youtube-v2`,
-      options: {
-        channelId: ['UC1JOO_eyhzaU4W5cgAVf0Sg'],
-        apiKey: process.env.YOUTUBE_API_KEY,
-        maxVideos: 50 
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-youtube-v2`,
+    //   options: {
+    //     channelId: ['UC1JOO_eyhzaU4W5cgAVf0Sg'],
+    //     apiKey: process.env.YOUTUBE_API_KEY,
+    //     maxVideos: 50 
+    //   },
+    // },
     {
       resolve: `gatsby-plugin-material-ui`,
       options: {
@@ -126,13 +126,13 @@ module.exports = {
           {
             resolve: `gatsby-remark-twitter-cards`,
             options: {
-              title: 'raufsamestone', // website title
-              separator: '|', // default
-              author: 'Berkay Demirbas',
-              background: '#ffffff',
+              title: '', // website title
+              separator: '', // default
+              author: 'raufsamestone',
+              background: '#ffff00',
               fontColor: '#17252A', // defaults to white (#ffffff)
-              titleFontSize: 120, // default
-              subtitleFontSize: 60, // default
+              titleFontSize: 150, // default
+              subtitleFontSize: 70, // default
               fontStyle: 'sans-serif', // default
             },
           },

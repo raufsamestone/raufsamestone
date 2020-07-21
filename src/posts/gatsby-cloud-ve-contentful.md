@@ -4,7 +4,7 @@ path: 'gatsby-cloud'
 title: "Gatsby Cloud ve Contentful İncelemesi"
 tags: ["Gatsby Cloud", "Jamstack", "Gatsby", "Contentful", "Headless CMS"]
 writer: Berkay Demirbas
-avatar: ../images/berkay.jpg
+avatar: ../images/raufsamestone.jpg
 english: false
 ---
 

@@ -117,7 +117,7 @@ export default About;
 
 export const blogListQuery = graphql`
 query AboutImage {
-        allFile(filter: {childImageSharp: {fixed: {originalName: {eq: "berkay.jpg"}}}}) {
+        allFile(filter: {childImageSharp: {fixed: {originalName: {eq: "raufsamestone.jpg"}}}}) {
         edges {
         node {
         id

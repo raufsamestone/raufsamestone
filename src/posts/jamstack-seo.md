@@ -9,7 +9,7 @@ tags:
 - React
 - React Helmet
 writer: Berkay Demirbas
-avatar: "../images/berkay.jpg"
+avatar: "../images/raufsamestone.jpg"
 english: false
 
 ---

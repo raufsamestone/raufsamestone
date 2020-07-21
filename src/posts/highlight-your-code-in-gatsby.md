@@ -4,7 +4,7 @@ path: 'highlight-your-code-in-gatsby'
 title: "Highlight your code in Gatsby"
 tags: ["Syntax", "Gatsby", "Jamstack", "Prismjs", "Deckdeckgo", "Stenciljs"]
 writer: Berkay Demirbas
-avatar: ../images/berkay.jpg
+avatar: ../images/raufsamestone.jpg
 english: true
 ---
 ## Different the basic and highlighted

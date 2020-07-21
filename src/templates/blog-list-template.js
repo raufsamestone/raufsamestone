@@ -21,6 +21,7 @@ export default class BlogList extends React.Component {
         <SEO title='Blog' />
         <br />
         <br />
+        <h1>Latest Blog Posts</h1>
         {
           posts.edges.map(({ node }) => (
             <ListWrapper>

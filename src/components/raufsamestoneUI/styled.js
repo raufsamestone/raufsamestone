@@ -54,18 +54,18 @@ export const Label = styled.span`
     text-align: center;
     font-weight: bold;
 `;
-export const Title = styled.h1`
+export const Title = styled.h2`
 font-size:22px;
 display: flex;
 align-items: center;
 width: max-content;
 color:#17252A;
 margin:0;
-width: -webkit-fill-available;
+width: auto;
 
 `;
 export const SubTitle = styled.text`
-font-size:13px;
+font-size: 1rem;
 line-height: 1.4;
 margin:0;
 font-weight: 400;
@@ -91,17 +91,16 @@ box-shadow: 0 2px 2px rgba(0, 0, 0, .1);
 background: white;
 margin: 0 0 2rem; 
 padding:1rem;
-transition: transform .2s ease-in;
 &:hover{
-  transform: translateY(-2px);
   box-shadow: 0 2px 2px rgba(0, 0, 0, .2);
 }
 
 `;
 
 export const PostContent = styled.div`
-font-size: 15px;
+font-size: 1.3rem;
 line-height: 1.4;
+margin-bottom:5rem;
 color:#222;
 font-weight: 400;
 `;

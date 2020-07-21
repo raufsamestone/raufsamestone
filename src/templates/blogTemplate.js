@@ -81,7 +81,7 @@ export const pageQuery = graphql`
         writer
         avatar {
           childImageSharp {
-            fixed(width:30, height:30) {
+            fixed(width:30, height:30, quality: 100) {
               ...GatsbyImageSharpFixed
             }
           }
