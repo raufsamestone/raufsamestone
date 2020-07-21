@@ -28,6 +28,7 @@ export default class BlogTemplate extends Component {
           description={post.excerpt}
           blogPostSlug={post.fields.slug}
           lang={post.frontmatter.english ? 'en' : 'tr'}
+          cardImageURL={post.frontmatter.cardImageURL}
         />
         <br />
         <GatsbyLink to='/blog'>
@@ -79,6 +80,7 @@ export const pageQuery = graphql`
         tags
         english
         writer
+        cardImageURL
         avatar {
           childImageSharp {
             fixed(width:30, height:30, quality: 100) {

@@ -9,6 +9,7 @@ tags:
 - image optimization
 writer: Berkay Demirbas
 avatar: "../images/raufsamestone.jpg"
+cardImageURL: https://res.cloudinary.com/raufsamestone/image/upload/v1595372718/blog-contents/converting-multiple-images-to-webp/converting-multiple-images-to-webp.png
 english: true
 ---
 This is how to convert your multiple any images from **.png** or **.jpeg** to **.webp** format with storage (Cloud) and optimization features.

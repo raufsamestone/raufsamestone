@@ -8,15 +8,14 @@ type Props = {
   meta: [],
   title: String,
   blogPostSlug:  String,
+  cardImageURL: String
 };
 
-function SEO({ description, lang, meta, title, blogPostSlug }: Props) {
+function SEO({ description, lang, meta, title, blogPostSlug, cardImageURL }: Props) {
   const siteMetadata = useSiteMetadata();
-
   const metaDescription = description || siteMetadata.description;
-  
-  const OgImage = blogPostSlug ? `https://www.raufsamestone.com${blogPostSlug}twitter-card.jpg` :  'https://www.raufsamestone.com/raufsamestone.jpg'
-  const TwitterCard = blogPostSlug ? 'summary_large_image' : 'summary'
+  const OgImage = cardImageURL ? cardImageURL :  `https://www.raufsamestone.com${blogPostSlug}twitter-card.jpg`  
+  const TwitterCard = blogPostSlug ? 'summary_large_image' : 'summary_large_image'
   return (
     <Helmet
       htmlAttributes={{

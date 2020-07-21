@@ -129,7 +129,7 @@ module.exports = {
               title: '', // website title
               separator: '', // default
               author: 'raufsamestone',
-              background: '#ffff00',
+              background: '#ffffff',
               fontColor: '#17252A', // defaults to white (#ffffff)
               titleFontSize: 150, // default
               subtitleFontSize: 70, // default
