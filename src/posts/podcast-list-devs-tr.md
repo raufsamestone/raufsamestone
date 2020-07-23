@@ -50,7 +50,7 @@ Egghead.io'nun yazılım geliştirme üzerine yayınladığı resmi podcast kana
 
 ## 5) Layout.FM
 
-Haftalık dizayn ve teknoloji ve yazılım geliştirmeyle ilgili içerikler olduğu podcast kanalı.
+Haftalık dizayn, teknoloji ve yazılım geliştirmeyle ilgili içeriklerin olduğu podcast kanalı.
 
 [layout.fm](https://layout.fm/)
 
