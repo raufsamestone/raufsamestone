@@ -2,7 +2,6 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`,
 });
 
-console.log(process.env.YOUTUBE_API_KEY)
 module.exports = {
   siteMetadata: { 
     title: `Raufsamestone`,
