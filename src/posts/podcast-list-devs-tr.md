@@ -12,7 +12,7 @@ cardImageURL: https://res.cloudinary.com/raufsamestone/image/upload/v1595501566/
 english: false
 ---
 
-Web geliştiricileri ve özellikle UI/UX tasarımcıları için faydalı olacağını düşündüğüm takip edilesi **İngilizce** podcast kanallarını burada bulabilirsiniz.
+Web geliştiricileri ve özellikle UI/UX tasarımcıları için faydalı olacağını düşündüğüm takip edilesi podcast kanallarını burada bulabilirsiniz.
 
 <div class='warning'>
 
@@ -66,10 +66,16 @@ Haftalık dizayn, teknoloji ve yazılım geliştirmeyle ilgili içeriklerin oldu
 
 [thatsmyjamstack.com](https://thatsmyjamstack.com/)
 
-## 8) Devchat TV
+## 8) Codefiction
 
-Clean Coders, VueJS, React gibi konuları ayrı kanallarda yayınlayan podcast kanalı.
+İstanbul'dan, genellikle yazılım geliştirme ve yazılım disiplinleri üzerine konuşulduğu keyifli podcast.
 
-[devchat.tv](https://devchat.tv)
+[codefiction.tect](https://www.codefiction.tech/)
+
+## 9) UX'minimal
+
+Ankara'da kurulan gönüllü UX topluluğundan farklı konuşmacılarla, kullanıcı deneyimine dair sohbetler gerçekleştiriyorlar.
+
+[uxminimal.com/podcast](https://www.uxminimal.com/podcast)
 
 [@raufsamestone](https://twitter.com/raufsamestone)
