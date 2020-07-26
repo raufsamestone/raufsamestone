@@ -14,6 +14,10 @@ export const GatsbyLink = styled(Link)`
 text-decoration: none;
 `;
 
+export const CTALink = styled(Link)`
+color: black;
+`;
+
 export const AvatarImage = styled(Img)`
 border-radius:2rem;
 margin-right: 5px; 
