@@ -7,7 +7,7 @@ tags:
   - tricks
 writer: Berkay Demirbas
 avatar: '../images/raufsamestone.jpg'
-cardImageURL: https://res.cloudinary.com/raufsamestone/image/upload/f_auto/v1598788229/blog-contents/duckduckgo/pglblrhtryzfhfm8cytr.jpg
+cardImageURL: https://res.cloudinary.com/raufsamestone/image/upload/v1598788229/blog-contents/duckduckgo/pglblrhtryzfhfm8cytr.jpg
 english: false
 ---
 
