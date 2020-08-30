@@ -25,6 +25,7 @@
     "gatsby-plugin-react-redux": "^1.1.0-0",
     "gatsby-plugin-sharp": "^2.5.2",
     "gatsby-plugin-sitemap": "^2.3.0",
+    "gatsby-remark-autolink-headers": "^2.3.11",
     "gatsby-remark-embed-youtube": "^0.0.7",
     "gatsby-remark-highlight-code": "^1.2.0",
     "gatsby-remark-images": "^3.2.1",

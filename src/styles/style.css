@@ -122,12 +122,12 @@ iframe {
   z-index: 0;
 }
 .rect {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 40rem;
-    z-index: 0;
-  }
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40rem;
+  z-index: 0;
+}
 
 @media only screen and (max-width: 600px) {
   iframe {
@@ -141,8 +141,8 @@ iframe {
   .rectleft {
     display: none;
   }
-  .rect{
-    display: none;  
+  .rect {
+    display: none;
   }
 }
 
@@ -162,4 +162,31 @@ img {
 }
 .warning a {
   color: white;
+}
+
+.unlist ul li {
+  list-style: none;
+}
+.unlist ul {
+  padding: 0;
+}
+
+.gototop{
+  height: auto;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background: black;
+  position: fixed;
+  bottom: 1rem;
+  right: 2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  z-index: 1;
+}
+.gototop:hover{
+  color:black;
+  background: yellow;
 }

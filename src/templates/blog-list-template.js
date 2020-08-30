@@ -88,7 +88,7 @@ query blogListQueryList($skip: Int!, $limit: Int!) {
           slug
         }
         id
-        excerpt(pruneLength: 250)
+        excerpt(pruneLength: 200)
         frontmatter {
           date(formatString: "LL")
           path

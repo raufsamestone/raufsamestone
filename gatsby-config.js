@@ -3,11 +3,11 @@ require('dotenv').config({
 });
 
 module.exports = {
-  siteMetadata: { 
+  siteMetadata: {
     title: `Raufsamestone`,
     description: `Raufsamestone, JAMstack, UI/UX, Growth Hacking and more`,
     author: `Raufsamestone`,
-    siteUrl: 'https://www.raufsamestone.com'
+    siteUrl: 'https://www.raufsamestone.com',
   },
   plugins: [
     `gatsby-plugin-flow`,
@@ -17,7 +17,7 @@ module.exports = {
       options: {
         channelId: ['UC1JOO_eyhzaU4W5cgAVf0Sg'],
         apiKey: process.env.YOUTUBE_API_KEY,
-        maxVideos: 50 
+        maxVideos: 50,
       },
     },
     {
@@ -29,13 +29,13 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-page-progress",
+      resolve: 'gatsby-plugin-page-progress',
       options: {
-        includePaths: ["/"],
+        includePaths: ['/'],
         height: 10,
         prependToBody: false,
-        color: `#ffff00`
-      }
+        color: `#ffff00`,
+      },
     },
     {
       resolve: `gatsby-plugin-canonical-urls`,
@@ -46,7 +46,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-161730425-1",
+        trackingId: 'UA-161730425-1',
         head: true,
       },
     },
@@ -56,25 +56,25 @@ module.exports = {
         output: `/sitemap.xml`,
         exclude: [`/about`],
         sitemapSize: 5000,
-      }
+      },
     },
     {
       resolve: 'gatsby-plugin-module-resolver',
       options: {
         root: './src',
         aliases: {
-          'components': './components',
-          'containers': './containers',
-          'images': './images',
-          'state': './state',
-          'styles': './styles',
-          'utils': './utils',
+          components: './components',
+          containers: './containers',
+          images: './images',
+          state: './state',
+          styles: './styles',
+          utils: './utils',
           static: {
             root: './public',
-            alias: './static'
-          }
-        }
-      }
+            alias: './static',
+          },
+        },
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -109,6 +109,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-autolink-headers`,
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -116,11 +117,11 @@ module.exports = {
             },
           },
           {
-            resolve: "gatsby-remark-embed-youtube",
+            resolve: 'gatsby-remark-embed-youtube',
             options: {
               width: 800,
-              height: 400
-            }
+              height: 400,
+            },
           },
           {
             resolve: `gatsby-remark-twitter-cards`,
@@ -138,8 +139,8 @@ module.exports = {
           {
             resolve: `gatsby-remark-highlight-code`,
             options: {
-              terminal: 'carbon'
-            }
+              terminal: 'carbon',
+            },
           },
         ],
       },
@@ -147,7 +148,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-react-redux`,
       options: {
-        pathToCreateStoreModule: "./src/state/store",
+        pathToCreateStoreModule: './src/state/store',
         serialize: {
           space: 0,
           isJSON: true,
@@ -179,9 +180,9 @@ module.exports = {
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
-                })
-              })
+                  custom_elements: [{ 'content:encoded': edge.node.html }],
+                });
+              });
             },
             query: `
               {
@@ -202,11 +203,11 @@ module.exports = {
                 }
               }
             `,
-            output: "/rss",
-            title: "Raufsamestone",
+            output: '/rss',
+            title: 'Raufsamestone',
           },
         ],
       },
     },
   ],
-}
+};
