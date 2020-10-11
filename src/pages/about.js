@@ -64,8 +64,8 @@ const About = ({ data }) => (
     </Typography>
     <AboutContent>
       <h3>Jobs</h3>
-      <p>Digital Marketing, Growth Hacker, JAMstack Developer - Konzek Technology, Inc <Label color='#3caf3a'>Current</Label></p>
-      <p>Co-Founder - Monotalic Digital Agency <Label color='#3caf3a'>Current</Label></p>
+      <p>Digital Marketing Manager - Konzek Teknoloji <Label color='#3caf3a'>Current</Label></p>
+      {/* <p>Co-Founder - Monotalic Digital Agency <Label color='#3caf3a'>Current</Label></p> */}
       <p>Digital Banking Operations Specialist, TEB, Inc <Label color='#17252A'>5 years</Label></p>
       <p>CRM Campaigns, Garanti Emeklilik, Inc <Label color='#17252A'>2 years</Label></p>
       <h3> Languages and Skills  </h3>
@@ -104,11 +104,11 @@ const About = ({ data }) => (
       <p>Zeplin <span role="img" aria-label="Zeplin"> <ZeplinIcon /></span></p>
     </AboutContent>
     <br />
-    <Fade in timeout={1000}>
-      <SquareButton as='a' href='/Berkay_Demirbas_CV_2020.pdf'>
+    {/* <Fade in timeout={1000}>
+      <SquareButton as='a' href='/'>
         Download CV
    </SquareButton>
-    </Fade>
+    </Fade> */}
     <br />
   </Layout>
 )
