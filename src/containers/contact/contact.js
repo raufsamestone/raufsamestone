@@ -22,7 +22,16 @@ const Contact = () => (
     </Fade>
     <br />
     <OutLink href='mailto:hey@raufsamestone.com' rel='noopener' target='_blank'>
-      Send <BackgroundedSpan>e-mail</BackgroundedSpan>
+      Send an e-mail to{' '}
+      <BackgroundedSpan> hey@raufsamestone.com</BackgroundedSpan>
+    </OutLink>
+    <br />
+    <OutLink
+      href='https://superpeer.com/raufsamestone'
+      rel='noopener'
+      target='_blank'>
+      {' '}
+      Subscribe for streams on <BackgroundedSpan>Superpeer</BackgroundedSpan>
     </OutLink>
     <br />
     <OutLink
@@ -54,6 +63,14 @@ const Contact = () => (
       <BackgroundedSpan>GitLab</BackgroundedSpan>
     </OutLink>{' '}
     <br />
+    <OutLink
+      href='https://superpeer.com/raufsamestone'
+      rel='noopener'
+      target='_blank'>
+      {' '}
+      Take a look my videos on <BackgroundedSpan>YouTube</BackgroundedSpan>
+    </OutLink>
+    <br />
     <RoughNotationGroup show={show}>
       <RoughNotation animationDuration={aniDuration} type='box'>
         {' '}
@@ -61,8 +78,8 @@ const Contact = () => (
           href='https://twitter.com/raufsamestone'
           rel='noopener'
           target='_blank'>
-          Or you can try <BackgroundedSpan>@raufsamestone</BackgroundedSpan> any
-          social media.
+          Or you can try <BackgroundedSpan>@raufsamestone</BackgroundedSpan> in
+          any social media.
         </OutLink>{' '}
       </RoughNotation>
       <br />
