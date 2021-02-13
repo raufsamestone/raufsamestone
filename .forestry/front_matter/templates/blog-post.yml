@@ -25,4 +25,4 @@ fields:
   name: english
   label: english
 pages:
-- src/posts/gatsby-ye-sitemap-nasil-eklenir.md
+- src/posts/creating-dynamic-form-titles-for-netlify-form.md
