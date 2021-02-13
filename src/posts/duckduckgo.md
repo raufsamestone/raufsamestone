@@ -1,6 +1,6 @@
 ---
 date: 2020-08-30T14:00:00Z
-path: duckduckgo
+path: /duckduckgo
 title: En İyi DuckDuckGo Özellikleri
 tags:
   - duckduckgo

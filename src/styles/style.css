@@ -118,6 +118,7 @@ iframe {
   position: absolute;
   left: 0;
   top: 0;
+  opacity: 0.3;
   width: 20rem;
   z-index: 0;
 }

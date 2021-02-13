@@ -1,6 +1,6 @@
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
+// require('dotenv').config({
+//   path: `.env.${process.env.NODE_ENV}`,
+// });
 
 module.exports = {
   siteMetadata: {
@@ -12,14 +12,6 @@ module.exports = {
   plugins: [
     `gatsby-plugin-flow`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-youtube-v2`,
-      options: {
-        channelId: ['UC1JOO_eyhzaU4W5cgAVf0Sg'],
-        apiKey: process.env.YOUTUBE_API_KEY,
-        maxVideos: 50,
-      },
-    },
     {
       resolve: `gatsby-plugin-material-ui`,
       options: {

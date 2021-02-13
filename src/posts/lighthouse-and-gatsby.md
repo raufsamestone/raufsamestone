@@ -1,6 +1,6 @@
 ---
 date: "2020-03-24"
-path: 'lighthouse-and-gatsby'
+path: '/lighthouse-and-gatsby'
 title: "Using Lighthouse with Gatsby"
 tags: ["Lighthouse", "GraphQL"]
 writer: Berkay Demirbas

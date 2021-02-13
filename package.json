@@ -32,11 +32,10 @@
     "gatsby-remark-twitter-cards": "^0.2.0",
     "gatsby-source-cloudinary": "^0.1.14",
     "gatsby-source-filesystem": "^2.1.43",
-    "gatsby-source-youtube-v2": "^1.0.1",
     "gatsby-transformer-remark": "^2.7.1",
     "gatsby-transformer-sharp": "^2.3.9",
     "lodash": "^4.17.15",
-    "react": "^16.12.0",
+    "react": "^17.0.1",
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.1",
@@ -70,9 +69,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/chronisp/gatsby-starter"
-  },
-  "bugs": {
-    "url": "https://github.com/chronisp/gatsby-starter/issues"
+    "url": ""
   }
 }

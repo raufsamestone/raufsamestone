@@ -1,6 +1,6 @@
 ---
 date: 2020-07-23T09:00:00Z
-path: podcast-listesi
+path: /podcast-listesi
 title: Geliştiriciler ve Tasarımcılar İçin Podcast Listesi
 tags:
   - podcast

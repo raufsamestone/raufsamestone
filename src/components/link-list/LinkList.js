@@ -14,7 +14,8 @@ const LinkList = ({ classes, links }: Props) => (
       {links.map(({ Icon, to, newTab, text }, index) => (
         <li key={index}>
           <a
-            href={to}
+            href={to} 
+            rel='noopener noreferrer'
             target={newTab ? '_blank' : '_self'}
             className={classes.link}>
             <Icon />

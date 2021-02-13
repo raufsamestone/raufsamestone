@@ -1,6 +1,6 @@
 ---
 date: "2020-03-24"
-path: 'eleventy-nedir'
+path: '/eleventy-nedir'
 title: "Eleventy Nedir?"
 tags: ["Eleventy", "Static Site Generators", "Jamstack", "11ty"]
 writer: Berkay Demirbas

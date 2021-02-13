@@ -1,5 +1,5 @@
 import React from 'react';
-import { CTALink } from '../../components/raufsamestoneUI/styled';
+import { CTALinkOut } from '../../components/raufsamestoneUI/styled';
 import Typography from '@material-ui/core/Typography';
 import Fade from '@material-ui/core/Fade';
 import content from './content';
@@ -82,11 +82,15 @@ const Welcome = () => (
           Start with my JAMstack
           <RoughNotation animationDuration={aniDuration} type='box'>
             {' '}
-            <CTALink title='Jamstack Videos' to='/videos'>
+            <CTALinkOut
+              title='Jamstack Videos'
+              target='_blank'
+              rel='noopener noreferrer'
+              href='https://youtube.com/raufsamestone'>
               videos
-            </CTALink>
+            </CTALinkOut>
           </RoughNotation>
-          <br/>
+          <br />
         </RoughNotationGroup>
       </Typography>
     </div>

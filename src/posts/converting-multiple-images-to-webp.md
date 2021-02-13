@@ -1,6 +1,6 @@
 ---
 date: 2020-07-22T22:00:00Z
-path: converting-multiple-images-to-webp
+path: /converting-multiple-images-to-webp
 title: Converting Multiple Images to WebP
 tags:
 - cloudinary

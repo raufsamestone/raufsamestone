@@ -1,6 +1,6 @@
 ---
 date: 2020-05-19T21:00:00.000+00:00
-path: headless-cms
+path: /headless-cms
 title: Headless CMS Nedir?
 tags:
 - Headless CMS

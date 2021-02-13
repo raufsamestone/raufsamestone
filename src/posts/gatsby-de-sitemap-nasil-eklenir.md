@@ -1,6 +1,6 @@
 ---
 date: 2020-06-27T21:00:00Z
-path: gatsby-sitemap
+path: /gatsby-sitemap
 title: Gatsby'de Site Haritası Nasıl Eklenir?
 tags:
 - react

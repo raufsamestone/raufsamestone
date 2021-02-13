@@ -1,6 +1,6 @@
 ---
 date: "2020-05-18"
-path: 'gatsby-cloud'
+path: '/gatsby-cloud'
 title: "Gatsby Cloud ve Contentful İncelemesi"
 tags: ["Gatsby Cloud", "Jamstack", "Gatsby", "Contentful", "Headless CMS"]
 writer: Berkay Demirbas

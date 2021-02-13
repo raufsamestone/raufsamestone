@@ -1,6 +1,6 @@
 ---
 date: "2020-03-26"
-path: 'highlight-your-code-in-gatsby'
+path: '/highlight-your-code-in-gatsby'
 title: "Highlight your code in Gatsby"
 tags: ["Syntax", "Gatsby", "Jamstack", "Prismjs", "Deckdeckgo", "Stenciljs"]
 writer: Berkay Demirbas

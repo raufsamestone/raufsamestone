@@ -1,6 +1,6 @@
 ---
 date: 2020-05-09T21:00:00Z
-path: react-helmet-jamstack-seo
+path: /react-helmet-jamstack-seo
 title: React Helmet ile SEO Componenti Oluşturma
 tags:
 - Jamstack

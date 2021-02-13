@@ -1,6 +1,6 @@
 ---
 date: 2021-02-12T21:00:00Z
-path: netlify-form-dynamic-titles
+path: /netlify-form-dynamic-titles
 title: 'Creating Dynamic Form Titles for Netlify Form'
 description: 'This simple solution is mostly using Netlify Forms for different event post based serialize sign-up forms in React.'
 tags:
