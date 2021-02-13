@@ -11,8 +11,8 @@ type Props = {
 
 const Header = ({ classes }: Props) => (
   <header className={classes.container}>
-    <Link to='/' className={classes.logo}>
-    </Link>
+    <div className={classes.logo}>
+    </div>
     <div className={classes.navigation}>
       <Navigation />
     </div>

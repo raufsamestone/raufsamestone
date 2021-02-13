@@ -111,7 +111,7 @@ iframe {
   right: 0;
   top: 5rem;
   width: 30rem;
-  z-index: 0;
+  z-index: -1;
 }
 
 .rectleft {

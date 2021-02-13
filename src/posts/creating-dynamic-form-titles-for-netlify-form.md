@@ -1,91 +1,57 @@
 ---
-avatar: "/uploads/raufsamestone.jpg"
 date: 2021-02-12T21:00:00Z
-path: netlify-form-dynamic title
+path: netlify-form-dynamic-title
 title: 'Creating Dynamic Form Titles for Netlify Form '
 tags:
-- forms
-- netlify
-writer: ''
+  - forms
+  - netlify
+writer: Berkay Demirbas
+avatar: '../images/raufsamestone.jpg'
 english: true
-
 ---
-Firstly you have to create a form-name for **fetching.**   
-  
-  
+
+This simple solution is mostly using [**Netlify Forms** ](https://www.netlify.com/products/forms/) for different event post based serialize sign-up forms.
+
+Like this:
+
+![Dynamic Netlify Form Titles](https://res.cloudinary.com/raufsamestone/image/upload/f_auto/v1613200185/blog-contents/dynamic-netlify-forms/jmqvuejv4xhj6j5syxk9.webp)
+
+Firstly you have to create a form-name with `form.getAttribute('name')` for **fetching.**
+
 <deckgo-highlight-code>  
-<code slot="code">  
-...
+<code slot="code">
 
-'form-name': _form.getAttribute_('name'),  
-...  
-</code>  
-</deckgo-highlight-code>  
-  
-  
-  
-<deckgo-highlight-code>  
-<code slot="code">  
-const _handleSubmit_ = _e_ => {
-
-_e.preventDefault_()
-
-const _form_ = _e.target_
-
-if (_form.checkValidity_() === _false_) {
-
-_e.preventDefault_()
-
-_e.stopPropagation_()
-
-}
-
-_setValidated_(_true_)
-
-if (_form.checkValidity_() === _true_)
-
-_fetch_('/', {
-
- _method_: 'POST',
-
- _headers_: { 'Content-Type': 'application/x-www-form-urlencoded' },
-
- _body_: _encode_({
-
-'form-name': _form.getAttribute_('name'),
-
+fetch('/', {
+method: 'POST',
+headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+body: encode({
+'form-name': form.getAttribute('name'),
 ...state,
-
 }),
-
 })
 
-}  
+</code>  
+</deckgo-highlight-code>  
+
+
+Add the form name as your title props to your form's `name` attribute like `{eventDate}`.
+
+<deckgo-highlight-code>  
+<code slot="code"> 
+
+``<form name={`${eventDate} Event Signup Form`} method="POST">``
+ 
 </code>  
 </deckgo-highlight-code>
 
-And 
+And add your Form component to your generated markdown files place. 
+
+So, you can use your any event post's frontmatter field as your form title 🎉.
 
 <deckgo-highlight-code>  
-<code slot="code">  
-<FormBody
+<code slot="code">
 
-_netlify_
+`<FormComponent eventDate={post.frontmatter.eventDate}/>`
 
-_validated_={validated}
-
-_onSubmit_={handleSubmit}
-
-_name_={\`'Your_Form_${formTitle}'}\`}
-
-_method_="POST"
-
-_action_="/success/"
-
-_data-netlify_="true"
-
-_data-netlify-honeypot_="bot-field"
-
->  
-</code>  
+</code>
 </deckgo-highlight-code>

@@ -34,7 +34,6 @@ import {
   SemanticUI,
   MaterialUI,
   TailwindCss,
-  SquareButton
 } from '../components/raufsamestoneUI/styled'
 
 const About = ({ data }) => (

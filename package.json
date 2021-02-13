@@ -17,7 +17,7 @@
     "gatsby-plugin-flow": "^1.1.17",
     "gatsby-plugin-google-analytics": "^2.2.0",
     "gatsby-plugin-manifest": "^2.2.34",
-    "gatsby-plugin-material-ui": "^2.1.6",
+    "gatsby-plugin-material-ui": "^2.1.10",
     "gatsby-plugin-module-resolver": "^1.0.3",
     "gatsby-plugin-offline": "^3.0.30",
     "gatsby-plugin-page-progress": "^2.0.16",

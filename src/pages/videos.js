@@ -16,7 +16,7 @@ export default class Videos extends React.Component {
                   <div>
                   <img className='video-card' src={node.thumbnail.url} alt={node.title} />
                   <div className='video-description'>
-                  <h1>{node.title}</h1>
+                  <h2>{node.title}</h2>
                   <date>{node.publishedAt}</date>
                   </div>
                   </div>
