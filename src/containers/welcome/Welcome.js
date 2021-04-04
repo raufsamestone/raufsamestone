@@ -55,9 +55,7 @@ const Welcome = () => (
       />
     </svg>
     <div>
-      <Typography variant='h3' color='textPrimary'>
-        {tagline}
-      </Typography>
+
       <Fade in timeout={1000}>
         <Typography variant='h1' color='textPrimary'>
           <>
@@ -72,7 +70,7 @@ const Welcome = () => (
           </>
         </Typography>
       </Fade>
-      <Typography variant='h3' color='textPrimary'>
+      <Typography variant='p' color='textPrimary'>
         <div
           style={{
             marginTop: '1rem',
