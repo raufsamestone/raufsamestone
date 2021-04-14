@@ -63,14 +63,6 @@ const Contact = () => (
       <BackgroundedSpan>GitLab</BackgroundedSpan>
     </OutLink>{' '}
     <br />
-    <OutLink
-      href='https://superpeer.com/raufsamestone'
-      rel='noopener'
-      target='_blank'>
-      {' '}
-      Take a look my videos on <BackgroundedSpan>YouTube</BackgroundedSpan>
-    </OutLink>
-    <br />
     <RoughNotationGroup show={show}>
       <RoughNotation animationDuration={aniDuration} type='box'>
         {' '}

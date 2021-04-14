@@ -77,19 +77,20 @@ const Welcome = () => (
           }}
         />
         <RoughNotationGroup show={show}>
-          Start with my JAMstack
-          <RoughNotation animationDuration={aniDuration} type='box'>
+          Start with my videos
+              <RoughNotation animationDuration={aniDuration} type='box'>
             {' '}
-            <CTALinkOut
+        <CTALinkOut
               title='Jamstack Videos'
               target='_blank'
               rel='noopener noreferrer'
               href='https://youtube.com/raufsamestone'>
-              videos
-            </CTALinkOut>
-          </RoughNotation>
+        {' '} on YouTube.
+        </CTALinkOut>
+        </RoughNotation>
+     
+     </RoughNotationGroup>
           <br />
-        </RoughNotationGroup>
       </Typography>
     </div>
   </>
