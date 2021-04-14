@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /about
+Disallow: /berkay-demirbas-cv-printable.pdf
+Disallow: /berkay-demirbas-cv.pdf
 Sitemap: https://www.raufsamestone.com/sitemap.xml
