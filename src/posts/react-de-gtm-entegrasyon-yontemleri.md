@@ -22,7 +22,9 @@ Bu içerikte, React tabanlı web uygulamanıza ve Gatsby'de farklı yöntemlerle
 
 Kurulumlara başlamadan önce,
 
-* GTM'deki ayarlarınızın doğruluğundan emin olmalısınız. _Admin > Container Settings_, Target Platform **Web** olmalıdır.
+* GTM'deki ayarlarınızın doğruluğundan emin olmalısınız. _Admin > Container Settings_, Target Platform **Web** olmalıdır.  
+    
+  ![](https://res.cloudinary.com/raufsamestone/image/upload/v1628443038/blog-contents/react-gtm/jykujgxnooiwqragfeco.png)
 * Tüm kurulumlarınızda tracking kodlarınızı (**container ID**) statik olarak değil, .**env** gibi [**Environment Variable**](https://en.wikipedia.org/wiki/Environment_variable) değişkeni olarak atamanız, [**Netlify**](https://docs.netlify.com/configure-builds/environment-variables/) **ya da** [**Vercel**](https://vercel.com/docs/environment-variables) **gibi** deploy tarafında da kullanımını kolaylaştıracaktır.
 
 ## React SPA'de GTM Kurulumu
@@ -33,9 +35,11 @@ Genellikle **SPA**'ler (Single Page Application) için tercih edilen sade, [Crea
 
     yarn add react-helmet
 
-**Kullanımı:**
+Daha sonra GTM'deki snippetinizi olduğu gibi eklemeniz yeterlidir.  
+  
+![](https://res.cloudinary.com/raufsamestone/image/upload/v1628443036/blog-contents/react-gtm/ofathsesrqhbcddlp8d9.png)
 
-GTM'deki snippetinizi olduğu gibi eklemeniz yeterlidir.
+**Kullanımı:**
 
     const Helmet = () => (
      <ReactHelmet>
@@ -164,9 +168,9 @@ GatsbyJS'deki [Custom HTML](https://www.gatsbyjs.com/docs/custom-html/#adding-cu
       }}
     />
 
-## NextJS'de GTM Kurulumu 
+## NextJS'de GTM Kurulumu
 
-En kısa yoldan **__document.js_** dosyası oluşturarak **Google Analytics** ya da **GTM** entegrasyon yapabilirsiniz. 
+En kısa yoldan **__document.js_** dosyası oluşturarak **Google Analytics** ya da **GTM** entegrasyon yapabilirsiniz.
 
     import Document, { Html, Head, Main, NextScript } from 'next/document'
     
@@ -210,3 +214,7 @@ En kısa yoldan **__document.js_** dosyası oluşturarak **Google Analytics** ya
         )
       }
     }
+
+Örneğin **Vercel** kullanıyorsanız da, ilgili değişkeni Siteniz _>_ _Settings >_ Environment Variables kısmından ekleyebilirsiniz.
+
+![](https://res.cloudinary.com/raufsamestone/image/upload/v1628443037/blog-contents/react-gtm/orkqzngqcnlnsg9vphsf.png)
