@@ -14,11 +14,11 @@ cardImageURL: https://res.cloudinary.com/raufsamestone/image/upload/v1628443040/
 
 İster React tabanlı bir web uygulamanız olsun, ister [Gatsby](https://www.gatsbyjs.com/) ya da [NextJS](https://nextjs.org/) gibi framework kullanıyor olun, **Google Tag Manager** kurulumunuzu ilk başta doğru yapmanız, sonraki aşamalarda debug, analiz ve raporlamalarınız için son derece önemlidir.
 
-Bu içerikte, React tabanlı web uygulamanıza ve Gatsby'de farklı yöntemlerle nasıl GTM ekleyebileceğinizi aktaracağım.
+Bu içerikte, React tabanlı web uygulamanıza ve diğer frameworklere farklı yöntemlerle nasıl GTM ekleyebileceğinizi aktaracağım.
 
 **Gerekenler:**
 
-- Bir adet internete bağlı bilgisayar.  
+- Bir adet internete bağlı bilgisayar 
 - Bir adet GTM Hesabı
 
 Kurulumlara başlamadan önce,
@@ -172,8 +172,7 @@ Spesifik olarak GTM için oluşturulmuş [react-gtm-module](https://yarnpkg.com/
 
 GatsbyJS'deki [Custom HTML](https://www.gatsbyjs.com/docs/custom-html/#adding-custom-javascript) yöntemiyle daha uğraştırıcı fakat pluginden bağımsız olarak daha stabil ve yönetilebilir halde GTM kurulumu yapabilirsiniz.
 
-<deckgo-highlight-code>  
-<code slot="code">  
+``` 
   // src/html.js
     <script
       dangerouslySetInnerHTML={{
@@ -194,24 +193,20 @@ GatsbyJS'deki [Custom HTML](https://www.gatsbyjs.com/docs/custom-html/#adding-cu
             `,
       }}
     />
-   </code>  
-</deckgo-highlight-code>
+```
 
 ## NextJS'de GTM Kurulumu
 
 En kısa yoldan **__document.js_** dosyası oluşturarak **Google Analytics** ya da **GTM** entegrasyon yapabilirsiniz.
 
 
-<deckgo-highlight-code>  
-<code slot="code">  
-
+```
   import Document, { Html, Head, Main, NextScript } from 'next/document'
     export default class MyDocument extends Document {
       render() {
         return (
           <Html>
             <Head>
-              {/* Global Site Tag (gtag.js) - Google Analytics */}
               <script
                 async
                 src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
@@ -233,9 +228,9 @@ En kısa yoldan **__document.js_** dosyası oluşturarak **Google Analytics** ya
         )
       }
     }
-   </code>  
-</deckgo-highlight-code>
+```
 
 Örneğin **Vercel** kullanıyorsanız da, ilgili değişkeni Siteniz _>_ _Settings >_ Environment Variables kısmından ekleyebilirsiniz.
+
 
 ![Vercel Environment Variables](https://res.cloudinary.com/raufsamestone/image/upload/v1628443037/blog-contents/react-gtm/orkqzngqcnlnsg9vphsf.png)
