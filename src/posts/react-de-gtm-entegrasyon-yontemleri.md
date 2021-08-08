@@ -13,7 +13,7 @@ english: false
 ---
 İster React tabanlı bir web uygulamanız olsun, ister [Gatsby](https://www.gatsbyjs.com/) ya da [NextJS](https://nextjs.org/) gibi framework kullanıyor olun, **Google Tag Manager** kurulumunuzu ilk başta doğru yapmanız, sonraki aşamalarda debug, analiz ve raporlamalarınız için son derece önemlidir.
 
-Bu içerikte, React tabanlı web uygulamanıza ve frameworklere farklı yöntemlerle nasıl GTM ekleyebileceğinizi aktaracağım.
+Bu içerikte, React tabanlı web uygulamanıza ve Gatsby'de farklı yöntemlerle nasıl GTM ekleyebileceğinizi aktaracağım.
 
 **Gerekenler:**
 
@@ -109,51 +109,30 @@ Spesifik olarak GTM için oluşturulmuş [react-gtm-module](https://yarnpkg.com/
     const app = document.getElementById('app')
     ReactDOM.render(<Router routes={routes} />, app)
 
-##   
-  
-Gatsby JS'de GTM Kurulumu
+## Gatsby JS'de GTM Kurulumu
 
-Üstteki yöntemlerin dışında, yine özellikle Gatsby ekosistemi içerisinde oluşturulmuş olan yardımcı pluginleri kullanabilirsiniz. 
+Üstteki yöntemlerin dışında, yine özellikle Gatsby ekosistemi içerisinde oluşturulmuş olan yardımcı pluginleri kullanabilirsiniz.
 
 ### Plugin Kullanarak
 
 Üstte bahsedilen react-helmet haricinde, Gatsby'nin official pluginlerinden [gatsby-plugin-google-tagmanager](https://www.gatsbyjs.com/plugins/gatsby-plugin-google-tagmanager/)'ı da kullanabilirsiniz.
 
-**Kurulum:** 
+**Kurulum:**
 
     yarn add gatsby-plugin-google-tagmanager
 
-**Kullanım:** 
+**Kullanım:**
 
-    // In your gatsby-config.js
+    // gatsby-config.js
     plugins: [
       {
         resolve: "gatsby-plugin-google-tagmanager",
         options: {
           id: "YOUR_GOOGLE_TAGMANAGER_ID",
-    
-          // Include GTM in development.
-          //
-          // Defaults to false meaning GTM will only be loaded in production.
-          includeInDevelopment: false,
-    
-          // datalayer to be set before GTM is loaded
-          // should be an object or a function that is executed in the browser
-          //
-          // Defaults to null
           defaultDataLayer: { platform: "gatsby" },
-    
-          // Specify optional GTM environment details.
           gtmAuth: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_AUTH_STRING",
           gtmPreview: "YOUR_GOOGLE_TAGMANAGER_ENVIRONMENT_PREVIEW_NAME",
           dataLayerName: "YOUR_DATA_LAYER_NAME",
-    
-          // Name of the event that is triggered
-          // on every Gatsby route change.
-          //
-          // Defaults to gatsby-route-change
-          routeChangeEventName: "YOUR_ROUTE_CHANGE_EVENT_NAME",
-          // Defaults to false
           enableWebVitalsTracking: true,
         },
       },
@@ -161,10 +140,10 @@ Gatsby JS'de GTM Kurulumu
 
 ### Custom HTML Kullanarak
 
-GatsbyJS'deki [Custom HTML](https://www.gatsbyjs.com/docs/custom-html/#adding-custom-javascript) yöntemiyle daha uğraştırıcı fakat pluginden bağımsız olarak daha stabil ve yönetilebilir halde GTM kurulumu yapabilirsiniz. 
+GatsbyJS'deki [Custom HTML](https://www.gatsbyjs.com/docs/custom-html/#adding-custom-javascript) yöntemiyle daha uğraştırıcı fakat pluginden bağımsız olarak daha stabil ve yönetilebilir halde GTM kurulumu yapabilirsiniz.
 
-**src/html.js**
-
+    // src/html.js
+    
     <script
       dangerouslySetInnerHTML={{
         __html: `
@@ -184,3 +163,50 @@ GatsbyJS'deki [Custom HTML](https://www.gatsbyjs.com/docs/custom-html/#adding-cu
             `,
       }}
     />
+
+## NextJS'de GTM Kurulumu 
+
+En kısa yoldan **__document.js_** dosyası oluşturarak **Google Analytics** ya da **GTM** entegrasyon yapabilirsiniz. 
+
+    import Document, { Html, Head, Main, NextScript } from 'next/document'
+    
+    export default class MyDocument extends Document {
+      render() {
+        return (
+          <Html>
+            <Head>
+              {/* Global Site Tag (gtag.js) - Google Analytics */}
+              <script
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+              />
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+                  page_path: window.location.pathname,
+                });
+              `,
+                }}
+              />
+            </Head>
+            <body>
+              <Main />
+              <NextScript />
+            </body>
+          </Html>
+        )
+      }
+    }
+            </Head>
+            <body>
+              <Main />
+              <NextScript />
+            </body>
+          </Html>
+        )
+      }
+    }
