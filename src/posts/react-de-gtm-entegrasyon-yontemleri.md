@@ -1,7 +1,7 @@
 ---
 date: 2021-08-07T21:00:00Z
 path: /react-gtm
-title: React'de GTM Entegrasyon Yöntemleri
+title: React GTM Entegrasyon Yöntemleri
 tags:
 - gatsbyjs
 - GTM
