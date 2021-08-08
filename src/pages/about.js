@@ -63,7 +63,8 @@ const About = ({ data }) => (
     </Typography>
     <AboutContent>
       <h3>Jobs</h3>
-      <p>Digital Marketing Manager - Konzek Teknoloji <Label color='#3caf3a'>Current</Label></p>
+      <p>Sr. Web Analyst - AnalyticaHouse <Label color='#3caf3a'>Current</Label></p>
+      <p>Digital Marketing Manager - Konzek Teknoloji <Label color='#17252A'>3 years</Label></p>
       {/* <p>Co-Founder - Monotalic Digital Agency <Label color='#3caf3a'>Current</Label></p> */}
       <p>Digital Banking Operations Specialist, TEB, Inc <Label color='#17252A'>5 years</Label></p>
       <p>CRM Campaigns, Garanti Emeklilik, Inc <Label color='#17252A'>2 years</Label></p>
