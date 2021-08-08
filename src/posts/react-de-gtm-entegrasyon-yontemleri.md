@@ -1,30 +1,32 @@
 ---
-avatar: "/uploads/raufsamestone.jpg"
 date: 2021-08-07T21:00:00Z
-path: react-gtm
+path: /react-gtm
 title: React'de GTM Entegrasyon Yöntemleri
 tags:
 - gatsbyjs
 - GTM
 - react
-writer: Berkay Demirbas
 english: false
-
+writer: Berkay Demirbas
+avatar: "../images/raufsamestone.jpg"
+cardImageURL: https://res.cloudinary.com/raufsamestone/image/upload/v1628443040/blog-contents/react-gtm/idwrwbccevdgo7dhdtpt.png
 ---
+
 İster React tabanlı bir web uygulamanız olsun, ister [Gatsby](https://www.gatsbyjs.com/) ya da [NextJS](https://nextjs.org/) gibi framework kullanıyor olun, **Google Tag Manager** kurulumunuzu ilk başta doğru yapmanız, sonraki aşamalarda debug, analiz ve raporlamalarınız için son derece önemlidir.
 
 Bu içerikte, React tabanlı web uygulamanıza ve Gatsby'de farklı yöntemlerle nasıl GTM ekleyebileceğinizi aktaracağım.
 
 **Gerekenler:**
 
-\- Bir adet internete bağlı bilgisayar.  
-\- GTM Hesabı
+- Bir adet internete bağlı bilgisayar.  
+- Bir adet GTM Hesabı
 
 Kurulumlara başlamadan önce,
 
 * GTM'deki ayarlarınızın doğruluğundan emin olmalısınız. _Admin > Container Settings_, Target Platform **Web** olmalıdır.  
     
-  ![](https://res.cloudinary.com/raufsamestone/image/upload/v1628443038/blog-contents/react-gtm/jykujgxnooiwqragfeco.png)
+ ![GTM Target Platform](https://res.cloudinary.com/raufsamestone/image/upload/v1628443038/blog-contents/react-gtm/jykujgxnooiwqragfeco.png)
+
 * Tüm kurulumlarınızda tracking kodlarınızı (**container ID**) statik olarak değil, .**env** gibi [**Environment Variable**](https://en.wikipedia.org/wiki/Environment_variable) değişkeni olarak atamanız, [**Netlify**](https://docs.netlify.com/configure-builds/environment-variables/) **ya da** [**Vercel**](https://vercel.com/docs/environment-variables) **gibi** deploy tarafında da kullanımını kolaylaştıracaktır.
 
 ## React SPA'de GTM Kurulumu
@@ -37,10 +39,12 @@ Genellikle **SPA**'ler (Single Page Application) için tercih edilen sade, [Crea
 
 Daha sonra GTM'deki snippetinizi olduğu gibi eklemeniz yeterlidir.  
   
-![](https://res.cloudinary.com/raufsamestone/image/upload/v1628443036/blog-contents/react-gtm/ofathsesrqhbcddlp8d9.png)
+![GTM Snippet](https://res.cloudinary.com/raufsamestone/image/upload/v1628443036/blog-contents/react-gtm/ofathsesrqhbcddlp8d9.png)
 
 **Kullanımı:**
 
+<deckgo-highlight-code>  
+<code slot="code">  
     const Helmet = () => (
      <ReactHelmet>
       <script>
@@ -60,6 +64,8 @@ Daha sonra GTM'deki snippetinizi olduğu gibi eklemeniz yeterlidir.
       </script>
      </ReactHelmet>
     )
+</code>  
+</deckgo-highlight-code>
 
 ## react-gtm-module ile GTM Kurulumu
 
@@ -67,10 +73,16 @@ Spesifik olarak GTM için oluşturulmuş [react-gtm-module](https://yarnpkg.com/
 
 **Yükleme:**
 
+<deckgo-highlight-code>  
+<code slot="code">  
     yarn add react-gtm-module
+   </code>  
+</deckgo-highlight-code>
 
 **Kullanımı:**
 
+<deckgo-highlight-code>  
+<code slot="code">  
     import React from 'react'
     import ReactDOM from 'react-dom'
     import Router from 'react-router'
@@ -88,9 +100,13 @@ Spesifik olarak GTM için oluşturulmuş [react-gtm-module](https://yarnpkg.com/
     
     const app = document.getElementById('app')
     ReactDOM.render(<Router routes={routes} />, app)
+   </code>  
+</deckgo-highlight-code>
 
 **dataLayer Gönderimi:**
 
+<deckgo-highlight-code>  
+<code slot="code">  
     import React from 'react'
     import ReactDOM from 'react-dom'
     import Router from 'react-router'
@@ -112,6 +128,8 @@ Spesifik olarak GTM için oluşturulmuş [react-gtm-module](https://yarnpkg.com/
     
     const app = document.getElementById('app')
     ReactDOM.render(<Router routes={routes} />, app)
+   </code>  
+</deckgo-highlight-code>
 
 ## Gatsby JS'de GTM Kurulumu
 
@@ -123,10 +141,16 @@ Spesifik olarak GTM için oluşturulmuş [react-gtm-module](https://yarnpkg.com/
 
 **Kurulum:**
 
+<deckgo-highlight-code>  
+<code slot="code">  
     yarn add gatsby-plugin-google-tagmanager
+   </code>  
+</deckgo-highlight-code>
 
 **Kullanım:**
 
+<deckgo-highlight-code>  
+<code slot="code">  
     // gatsby-config.js
     plugins: [
       {
@@ -141,11 +165,15 @@ Spesifik olarak GTM için oluşturulmuş [react-gtm-module](https://yarnpkg.com/
         },
       },
     ]
+   </code>  
+</deckgo-highlight-code>
 
 ### Custom HTML Kullanarak
 
 GatsbyJS'deki [Custom HTML](https://www.gatsbyjs.com/docs/custom-html/#adding-custom-javascript) yöntemiyle daha uğraştırıcı fakat pluginden bağımsız olarak daha stabil ve yönetilebilir halde GTM kurulumu yapabilirsiniz.
 
+<deckgo-highlight-code>  
+<code slot="code">  
     // src/html.js
     
     <script
@@ -167,11 +195,15 @@ GatsbyJS'deki [Custom HTML](https://www.gatsbyjs.com/docs/custom-html/#adding-cu
             `,
       }}
     />
+   </code>  
+</deckgo-highlight-code>
 
 ## NextJS'de GTM Kurulumu
 
 En kısa yoldan **__document.js_** dosyası oluşturarak **Google Analytics** ya da **GTM** entegrasyon yapabilirsiniz.
 
+<deckgo-highlight-code>  
+<code slot="code">  
     import Document, { Html, Head, Main, NextScript } from 'next/document'
     
     export default class MyDocument extends Document {
@@ -214,7 +246,9 @@ En kısa yoldan **__document.js_** dosyası oluşturarak **Google Analytics** ya
         )
       }
     }
+   </code>  
+</deckgo-highlight-code>
 
 Örneğin **Vercel** kullanıyorsanız da, ilgili değişkeni Siteniz _>_ _Settings >_ Environment Variables kısmından ekleyebilirsiniz.
 
-![](https://res.cloudinary.com/raufsamestone/image/upload/v1628443037/blog-contents/react-gtm/orkqzngqcnlnsg9vphsf.png)
+![Vercel Environment Variables](https://res.cloudinary.com/raufsamestone/image/upload/v1628443037/blog-contents/react-gtm/orkqzngqcnlnsg9vphsf.png)
