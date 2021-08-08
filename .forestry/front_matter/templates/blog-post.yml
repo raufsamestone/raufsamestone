@@ -26,3 +26,4 @@ fields:
   label: english
 pages:
 - src/posts/creating-dynamic-form-titles-for-netlify-form.md
+- src/posts/react-de-gtm-entegrasyon-yontemleri.md
