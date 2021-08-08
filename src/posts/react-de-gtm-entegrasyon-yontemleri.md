@@ -174,8 +174,7 @@ GatsbyJS'deki [Custom HTML](https://www.gatsbyjs.com/docs/custom-html/#adding-cu
 
 <deckgo-highlight-code>  
 <code slot="code">  
-    // src/html.js
-    
+  // src/html.js
     <script
       dangerouslySetInnerHTML={{
         __html: `
@@ -202,10 +201,11 @@ GatsbyJS'deki [Custom HTML](https://www.gatsbyjs.com/docs/custom-html/#adding-cu
 
 En kısa yoldan **__document.js_** dosyası oluşturarak **Google Analytics** ya da **GTM** entegrasyon yapabilirsiniz.
 
+
 <deckgo-highlight-code>  
 <code slot="code">  
-    import Document, { Html, Head, Main, NextScript } from 'next/document'
-    
+
+  import Document, { Html, Head, Main, NextScript } from 'next/document'
     export default class MyDocument extends Document {
       render() {
         return (
@@ -229,19 +229,6 @@ En kısa yoldan **__document.js_** dosyası oluşturarak **Google Analytics** ya
                 }}
               />
             </Head>
-            <body>
-              <Main />
-              <NextScript />
-            </body>
-          </Html>
-        )
-      }
-    }
-            </Head>
-            <body>
-              <Main />
-              <NextScript />
-            </body>
           </Html>
         )
       }
