@@ -1,5 +1,5 @@
 ---
-date: 2021-01-02T17:00:00Z
+date: 2022-01-02T17:00:00Z
 path: /user-flow-recorder
 title: Measure User Flows with Chrome’s Recorder
 tags:
@@ -14,9 +14,9 @@ cardImageURL: https://res.cloudinary.com/raufsamestone/image/upload/v1641129431/
 
 In **Chrome 97**, the Record feature has been added to better measure web analytics measurements and user behaviors.
 
-In order to test this beta feature, you must first download **Chrome 97** from [here](https://www.google.com/chrome/beta/).
+In order to test this beta feature, you must first download Chrome 97 from [here](https://www.google.com/chrome/beta/).
 
-To open the Recorder panel use `shift + ⌘ + p`
+To open the Recorder panel, go to dev tools with right-click inspect, open "run command" using this shortcut 👉 `shift + ⌘ + p`  and search "recorder".
 
 ![https://res.cloudinary.com/raufsamestone/image/upload/v1641126868/blog-contents/chrome-recorder/rk5xcho4wuw4ynluh3ks.jpg](https://res.cloudinary.com/raufsamestone/image/upload/v1641126868/blog-contents/chrome-recorder/rk5xcho4wuw4ynluh3ks.jpg)
 
