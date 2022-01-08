@@ -116,19 +116,6 @@ module.exports = {
             },
           },
           {
-            resolve: `gatsby-remark-twitter-cards`,
-            options: {
-              title: '', // website title
-              separator: '', // default
-              author: 'raufsamestone',
-              background: '#ffffff',
-              fontColor: '#17252A', // defaults to white (#ffffff)
-              titleFontSize: 150, // default
-              subtitleFontSize: 70, // default
-              fontStyle: 'sans-serif', // default
-            },
-          },
-          {
             resolve: `gatsby-remark-highlight-code`,
             options: {
               terminal: 'carbon',
